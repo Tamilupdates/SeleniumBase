@@ -132,7 +132,7 @@ RUN seleniumbase get chromedriver --path
 # Create entrypoint and grab example tests
 #==========================================
 COPY update.py update.py /
-COPY start.sh /
+COPY start.sh start.sh /
 COPY integrations/docker/docker-entrypoint.sh /
 COPY integrations/docker/run_docker_test_in_chrome.sh /
 RUN chmod +x *.sh
